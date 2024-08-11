@@ -1,0 +1,58 @@
+body {
+    padding-inline: var(--pico-spacing);
+}
+
+
+.header-right {
+    display: inline;
+}
+
+.main-full {
+    height: calc(100svh - 5.1625em);
+    background: url(../img/wallpaperflare.com_wallpaper\(4\).jpg);
+    background-position: center;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    margin-inline: calc(-1 * var(--pico-spacing));
+    margin-bottom: 2em;
+}
+
+.main-button {
+    display: inline-block !important;
+    width: 100%;
+}
+
+.Skills-h1 {
+    margin: 2em 0 1em;
+    text-align: center;
+}
+
+article {
+    text-align: center;
+    max-width: 16em;
+    transition: 0.4s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    font-size: 5em;
+
+}
+
+@media (max-width: 730px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/e2644036b3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/pico.blue.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><h1>Yousef</h1></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="contrast">About</a></li>
+          <li><a href="#" class="contrast">Services</a></li>
+          <li><a href="#" class="contrast">Products</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-full">
+        <div class="main-content">
+            <h1>Hi I am Yousef</h1>
+
+            <h2>I am <span>HTML,CSS</span> <br>Devolper</h2>
+
+            <a href="#Projects"><button class="main-button">View my work</button></a>
+        </div>
+    </main>
+
+    <div class="container-fluid">
+        <h1 class="Skills-h1">Skills</h1>
+        <div class="content">
+            <article>
+                <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="info">
+                        <h3>css</h3>
+                        <p>I can use css when i make websites to make them look awesome</p>
+                    </div>
+            </article>
+            <article>
+                <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="info">
+                        <h3>HTML</h3>
+                        <p>I can use css when i make websites to make them look awesome</p>
+                    </div>
+            </article>
+            <article>
+                <div class="icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="info">
+                        <h3>Javascript</h3>
+                        <p>I can use css when i make websites to make them look awesome</p>
+                    </div>
+            </article>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.querySelector('nav');
+            const headerHeight = header.offsetHeight;
+            console.log('Header height:', headerHeight + 'px');
+        });
+    </script>
+
+</body>
+</html>
