@@ -1,5 +1,6 @@
 * {
 	font-family: var(--pico-font-family-sans-serif);
+    scroll-behavior: smooth;
 }
 
 body {
@@ -7,9 +8,6 @@ body {
 }
 
 
-.header-right {
-    display: inline;
-}
 
 .main-full {
     height: calc(100svh - 5.1625em);
@@ -22,6 +20,7 @@ body {
     margin-inline: calc(-1 * var(--pico-spacing));
     margin-bottom: 2em;
 }
+
 
 .main-button {
     display: inline-block !important;
@@ -59,4 +58,62 @@ article:hover {
     display: flex;
     justify-content: center;
     gap: 1em;
+}
+
+section {
+    margin-block: 6em;
+}
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about-info {
+    width: 50ch;
+}
+
+.photo {
+    flex: 2 0 50%;
+    max-width: 300px;
+    height: auto;
+    position: relative; 
+}
+
+.photo::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -1.875em;
+    left: -1.875em;
+    z-index: -1;
+    border: 1px var(--pico-h2-color) solid;
+}
+
+
+@media (width <= 1023px) {
+    .photo {
+        margin-bottom: 4em;
+    }
+
+    .photo::before {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scale(1.1);
+        z-index: -1;
+        border: 1px var(--pico-h2-color) solid;
+    }
+
+    .about-info {
+        text-align: center;
+        
+    }
 }
