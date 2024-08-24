@@ -290,16 +290,19 @@ article p {
     }
 }
 
-footer p {
+footer {
+    background-color: dodgerblue;
     text-align: center;
-    font-size: 1.3em;
-    font-weight: 500;
+    padding: 1em;
+    color: #fff;
 }
 
-footer {
-    padding-block: 1em;
-    background-color: #f1f1f1;
+footer > * {
+    margin-block: 0.3em;
 }
+
+
+
 
 
 
